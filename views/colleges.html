@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--meta-data-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+  <meta name="author" content="Priyabrata Biswas">
+	<title>Product</title>
+	<!--stylesheets-->
+	<link rel="shortcut icon" href="../public/img/favicon.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../public/css/materialize.min.css" media="screen,projection">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="../public/css/header.css">
+	<link rel="stylesheet" href="../public/css/footer.css">
+	<link rel="stylesheet" href="../public/css/colleges.css">
+</head>
+<body>
+	<!--Main Header & Navigation-->
+	<header>
+		<div class="navbar-fixed">
+			<nav class="white">
+				<div class="nav-wrapper">
+					<a href="#" data-target="slide-out" class="sidenav-trigger">
+						<i class="material-icons black-text">menu</i>
+					</a>
+					<a href="index.html" class="brand-logo tooltipped"
+						data-position="bottom" data-tooltip="school management"
+						style="background: none">
+						<img src="../public/img/logo.png" alt="Logo" width="70" height="70">
+					</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="index.html#home">Home</a></li>
+						<li><a href="index.html#services">Services</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+						<li><a href="index.html#contact">Office</a></li>
+
+						<li><a href="#">Colleges</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<ul id="slide-out" class="sidenav">
+			<li>
+				<div class="user-view">
+					<img class="circle" src="../public/img/logo.png" alt="Product">
+					<span class="name">Product</span>
+					<a href="mailto:iiysoftware@gmail.com" target="_blank">
+						<span class="white-text email">iiysoftware@gmail.com</span>
+					</a>
+				</div>
+			</li>
+			<li><a href="index.html#home">Home</a></li>
+			<li><a href="index.html#services">Services</a></li>
+			<li><a href="index.html#about">About</a></li>
+			<li><a href="index.html#contact">Contact</a></li>
+			
+			<li><a href="#">Colleges</a></li>
+		</ul>
+	</header>
+	<section id="search">
+		<div class="container">
+			<div class="row center">
+				<h3>College Catalog</h3>
+				<div class="col s12 m12 l12 search-college">
+					<input type="text" placeholder="Search by College Name" id="college-name">
+					<i class="material-icons">search</i>
+				</div>
+			</div>
+			<div class="row">
+				<p>FILTER BY:</p>
+				<div class="input-field col s12 m6 l6">
+					<select>
+						<option value="" disabled selected>Select Country</option>
+						<!-- <option value="1">Andhra Pradesh</option>
+						<option value="2">Arunachal Pradesh</option>
+						<option value="3">Assam</option>
+						<option value="4">Bihar</option>
+						<option value="5">Chhattisgarh</option>
+						<option value="6">Goa</option>
+						<option value="7">Gujarat</option>
+						<option value="8">Haryana</option>
+						<option value="9">Himachal Pradesh</option>
+						<option value="10">Jammu and Kashmir</option>
+						<option value="11">Jharkhand</option>
+						<option value="12">Karnataka</option>
+						<option value="13">Kerala</option>
+						<option value="14">Madhya Pradesh</option>
+						<option value="15">Maharashtra</option>
+						<option value="16">Manipur</option>
+						<option value="17">Meghalaya</option>
+						<option value="18">Mizoram</option>
+						<option value="19">Nagaland</option>
+						<option value="20">Odisha</option>
+						<option value="21">Punjab</option>
+						<option value="22">Rajasthan</option>
+						<option value="23">Sikkim</option>
+						<option value="24">Tamil Nadu</option>
+						<option value="25">Telangana</option>
+						<option value="26">Tripura</option>
+						<option value="27">Uttar Pradesh</option>
+						<option value="28">Uttarakhand</option>
+						<option value="29">West Bengal</option> -->
+						<option value="1">Australia</option>
+						<option value="2">Ireland</option>
+						<option value="3">New Zealand</option>
+						<option value="4">USA</option>
+						<option value="4">Canada</option>
+
+					</select>
+					<label>Where do you want to study?</label>
+				</div>
+				<!-- <div class="input-field col s12 m6 l6">
+					<select>
+						<option value="" disabled selected>Select Price</option>
+						<option value="1">Rs. 1,00,000 - Rs. 3,00,000</option>
+						<option value="2">Rs. 3,00,000 - Rs. 6,00,000</option>
+						<option value="3">Rs. 6,00,000 - Rs. 9,00,000</option>
+						<option value="4">Rs. 6,00,000 - Rs. 9,00,000</option>
+						<option value="5">Rs. 9,00,000 - Rs. 12,00,000</option>
+						<option value="6">Rs. 12,00,000 - Rs. 15,00,000</option>
+						<option value="7">Rs. 15,00,000 - Rs. 18,00,000</option>
+					</select>
+					<label>What is the price you can afford?</label>
+				</div>
+			</div> -->
+		</div>
+	</section>
+	<section id="colleges">
+		<div class="container">
+			<div class="row center">
+				<!--List of colleges to be displayed!-->
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m4 l4">
+					<p>
+						IIY Software,<br>
+						SCF-517, 2 nd Floor, Sector - 70,<br>
+						Mohali-160071.<br>
+						Mob.: 9464220710<br>
+					<a href="mailto:iiysoftware@gmail.com" target="_blank">
+						iiysoftware@gmail.com
+					</a>
+					<a href="https://www.allaboutplacements.com" target="_blank">
+						www.allaboutplacements.com
+					</a>
+				</p>
+				</div>
+				<div class="col s12 m4 l4">
+					<label for="newsletter">Subscribe to our newsletter!</label>
+					<input type="text" placeholder="Enter Your Email" id="newsletter">
+				</div>
+				<div class="col s12 m4 l4 center">
+					<p class="social-media">Social Media Links</p>
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-instagram"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--scripts-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+	<script src="../public/js/materialize.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="../public/js/colleges.js"></script>
+	<script src="../public/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/*
+ * Stylesheet for the Colleges Page
+ */
+
+#search {
+	padding: 3em;
+}
+
+#search .search-college {
+	position: relative;
+}
+
+#search .search-college input {
+	margin: 0;
+	padding-left: 1em;
+	padding-right: 2em;
+	width: 50%;
+	box-shadow: 0 0 1em #bbb;
+	border: 0.5px solid #adadad;
+	border-radius: 10px;
+}
+
+#search .search-college i {
+	position: absolute;
+	top: 10px;
+	margin-left: -35px;
+}
+
+.hide {
+	display: none;
+}
+
+@media only screen and (min-width: 491px) and (max-width: 600px) {
+	#search .search-college input {
+		width: 90%;
+	}
+
+	#search .search-college i {
+		margin-left: 150px;
+	}
+}
+
+@media only screen and (max-width: 490px) {
+	#search .search-college i {
+		margin-left: -30px;
+	}
+}
