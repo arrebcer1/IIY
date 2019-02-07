@@ -1,0 +1,55 @@
+@media only screen and (min-width:750px) {
+    .services .service-items {
+        flex-flow: row;
+    }
+}
+
+@media only screen and (min-width:500px) {
+    $body-padding-y: 50px;
+    $body-padding-x: 40px;
+
+    .hide-desktop {
+        display: none;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .desktop-menu{
+        display: flex;
+    }
+
+
+}
+
+@media only screen and (min-width:765px) {
+    img {
+        width: 40%;
+    }
+    .hero {
+        flex-flow: row;
+
+
+        div {
+            margin-left: 20px;
+        }
+    }
+    .about{
+        .content{
+            display: flex;
+            flex-flow: row;
+            img{
+                margin-left: 20px;
+            }
+        }
+    }
+    footer .content{
+        flex-flow: row;
+        
+        font-size: .7em;
+        div{
+            font-size: unset;
+        }
+    }
+}

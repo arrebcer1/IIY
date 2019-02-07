@@ -1,0 +1,32 @@
+footer{
+    padding: 0px 0px;;
+    background-color: #202124;
+    color: white;
+    .content{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        pre{
+            font-family: $font-family;
+            margin-bottom: 5px;
+        }
+        div{
+            font-size: 1.5em;
+            padding: 5px;
+            a{
+                text-decoration: none;
+                color: #616161;
+                transition: .25s;
+                font-size: 1.25rem;
+
+                &:hover{
+                    color: white;
+                }
+            }
+            span{
+                padding-right: 10px;
+            }
+        }
+    }
+}
