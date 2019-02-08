@@ -25,33 +25,31 @@
         <div class="hide-mobile" id="menu-drawer">
             <div>
                 <div class="brand-logo"><img src="assets/logo.png" alt="Logo" /></div>
-                <div class="menu-items">Home</div>
-                <div class="menu-items">Services</div>
-                <div class="menu-items">About</div>
-                <div class="menu-items">Contact</div>
-                <div class="menu-items">Colleges</div>
-                <div class="menu-items">Office</div>
+                <div class="menu-items"><a href="#home">Home</a></div>
+                <div class="menu-items"><a href="#services">Services</a></div>
+                <div class="menu-items"><a href="#about">About</a></div>
+                <div class="menu-items"><a href='#contact'>Contact</a></div>
+                <div class="menu-items"><a href='#'>Colleges</a></div>
             </div>
         </div>
 
         <div class="brand-logo"><img src="assets/logo.png" alt="Logo" /></div>
         <div class="desktop-menu">
-            <div class="menu-items">Home</div>
-            <div class="menu-items">Services</div>
-            <div class="menu-items">About</div>
-            <div class="menu-items">Contact</div>
-            <div class="menu-items">Colleges</div>
-            <div class="menu-items">Office</div>
+            <div class="menu-items"><a href="#home">Home</a></div>
+            <div class="menu-items"><a href="#services">Services</a></div>
+            <div class="menu-items"><a href="#about">About</a></div>
+            <div class="menu-items"><a href='#contact'>Contact</a></div>
+            <div class="menu-items"><a href='#'>Colleges</a></div>
         </div>
     </section>
-    <section class="hero">
+    <section id='home' class="hero">
         <img src="assets/banner.jpg" alt="hero">
         <div>
             <h1 class="hero-text">IIY Software</h1>
             <p>Lorem ipsum dollor</p>
         </div>
     </section>
-    <section class="services container">
+    <section id='services' class="services container">
         <h2>Our Services</h2>
         <div class="service-items">
             <div class="card small">
@@ -77,7 +75,7 @@
             </div>
         </div>
     </section>
-    <section class="about container">
+    <section id='about' class="about container">
         <h2>About Us</h2>
         <div class="content">
             <span style="display:inline">
@@ -106,26 +104,38 @@
             <img style="display:inline" class="" src="assets/about.jpg" alt="about">
         </div>
     </section>
-    <section class="contact container">
+    <section id='contact' class="contact container">
         <h2>Contact Us</h2>
         <!-- TODO: link with data -->
         <div id="contactsList">
-            <div class="contactTile" v-for="contact in contacts">
-                {{contact.address}}
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <pre>
+1/19 Dinnison Street
+Gosford West 
+2250
+New South Wales
+Australia.
+            </pre>
+                </div>
+            </div>
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <pre>
+IIY Software,
+SCF - 517, 2nd Floor, Sector - 70,
+Mohali - 160071
+Mob.: 9464220710
+</pre>
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="container content">
             <address>
-                <pre>
-IIY Software,
-SCF - 517, 2nd Floor, Sector - 70,
-Mohali - 160071
-Mob.: 9464220710
-<a href="mailto:iiysoftware@gmail.com">iiysoftware@gmail.com</a> 
-<a href="http://www.allaboutplacements.com">www.allaboutplacements.com</a> 
-                </pre>
+                <a href="mailto:iiysoftware@gmail.com">iiysoftware@gmail.com</a>
+                <a href="http://www.allaboutplacements.com">www.allaboutplacements.com</a>
             </address>
             <div>Subscribe to our newsletter <br> <input type="email" placeholder="abc@xyc.com"></div>
             <div>Social Media Links
