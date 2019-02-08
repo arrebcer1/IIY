@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+@import '../materialize-src/sass/materialize';
 $font-family: 'Montserrat', sans-serif;
 $body-padding-y: 5px;
 $body-padding-x:40px;
@@ -59,4 +62,5 @@ section {
 @import 'about';
 @import 'footer';
 @import 'contact';
+@import 'collegeList';
 @import 'responsive';
