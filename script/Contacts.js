@@ -19,3 +19,5 @@ function createContactList(data){
         }
     });
 }
+
+getContactsData();
