@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- Vue js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
     <!-- Materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/materialize.css">
 
     <link rel="stylesheet" href="css/style.css">
@@ -32,13 +36,13 @@
 
         <div class="brand-logo"><img src="assets/logo.png" alt="Logo" /></div>
         <div class="desktop-menu">
-                <div class="menu-items">Home</div>
-                <div class="menu-items">Services</div>
-                <div class="menu-items">About</div>
-                <div class="menu-items">Contact</div>
-                <div class="menu-items">Colleges</div>
-                <div class="menu-items">Office</div>
-            </div>
+            <div class="menu-items">Home</div>
+            <div class="menu-items">Services</div>
+            <div class="menu-items">About</div>
+            <div class="menu-items">Contact</div>
+            <div class="menu-items">Colleges</div>
+            <div class="menu-items">Office</div>
+        </div>
     </section>
     <section class="hero">
         <img src="assets/banner.jpg" alt="hero">
@@ -105,6 +109,11 @@
     <section class="contact container">
         <h2>Contact Us</h2>
         <!-- TODO: link with data -->
+        <div id="contactsList">
+            <div class="contactTile" v-for="contact in contacts">
+                {{contact.address}}
+            </div>
+        </div>
     </section>
     <footer>
         <div class="container content">
@@ -132,6 +141,7 @@ Mob.: 9464220710
 
     <script src="materialize-src/js/bin/materialize.js"></script>
     <script src="script/basic.js"></script>
+    <script src="script/Contacts.js"></script>
 </body>
 
 </html>
