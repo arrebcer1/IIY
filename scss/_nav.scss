@@ -18,9 +18,14 @@
             height: 100%;
         }
     }
-    .brand-logo{
+
+    .brand-logo {
         height: 70px;
     }
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -44,14 +49,18 @@
             padding-left: 20px;
             transition: .25s;
 
+            
+
             &:hover {
                 background-color: #616161;
                 color: white;
             }
         }
-        .brand-logo{
+
+        .brand-logo {
             height: 100%;
-            img{
+
+            img {
                 width: 100%;
                 height: 100%;
             }
@@ -62,16 +71,18 @@
 
 .brand-logo {
     height: 100%;
+
     img {
         height: 100%;
         width: auto;
     }
 }
 
-.desktop-menu{
+.desktop-menu {
     display: none;
     align-items: center;
-    div{
+
+    div {
         padding-right: 20px;
     }
 }

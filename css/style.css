@@ -67,6 +67,11 @@ section {
   height: 70px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 #menu-drawer {
   position: fixed;
   top: 70px;
@@ -175,6 +180,18 @@ footer .content div a:hover {
 }
 footer .content div span {
   padding-right: 10px;
+}
+
+#contactsList {
+  display: flex;
+}
+#contactsList div {
+  margin-right: 20px;
+}
+
+address {
+  display: flex;
+  flex-flow: column;
 }
 
 @media only screen and (min-width: 750px) {
